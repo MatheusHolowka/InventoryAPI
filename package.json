@@ -1,0 +1,21 @@
+{
+    "name": "aula09",
+    "module": "index.js",
+    "type": "module",
+    "devDependencies": {
+      "@types/bun": "latest"
+    },
+    "peerDependencies": {
+      "typescript": "^5.0.0"
+    },
+    "dependencies": {
+      "cors": "^2.8.5",
+      "dotenv": "^16.4.5",
+      "eslint": "^9.11.1",
+      "eslint-config-prettier": "^9.1.0",
+      "eslint-plugin-prettier": "^5.2.1",
+      "express": "^4.21.0",
+      "mysql2": "^3.11.3",
+      "prettier": "^3.3.3"
+    }
+  }
