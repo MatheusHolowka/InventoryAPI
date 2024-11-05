@@ -6,7 +6,6 @@ const router = Router();
 
 // CRUD
 router.post('/', InventoryController.addInventoryItem); // create
-router.get('/:id', InventoryController.getInventoryItem); // read one
 router.get('/', InventoryController.getInventoryItems); // read all
 router.put('/:id', InventoryController.updateInventoryItem); // update
 router.delete('/:id', InventoryController.deleteInventoryItem); // delete
