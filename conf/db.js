@@ -1,21 +1,19 @@
+// conf/db.js
 import mysql from 'mysql2';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const db = mysql.createConnection({
-    host:  process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME
+  host: 'localhost',
+  user: 'root', // Substitua pelo seu usuário MySQL
+  password: '123123', // Substitua pela sua senha MySQL
+  database: 'biblioteca',
 });
 
-// check connection
 db.connect((err) => {
-    if (err) {
-        throw err;
-    }
-    console.log('Connected to database');
+  if (err) {
+    console.error('Erro ao conectar ao banco de dados:', err.message, err.stack);
+    throw err;
+  }
+  console.log('Conectado ao banco de dados MySQL - Database: biblioteca');
 });
 
 export default db;
